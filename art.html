@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery - Manaal Syed</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="header-text">
+                    <h1>Manaal Syed</h1>
+                    <p>Software Developer & Artist</p>
+                </div>
+                <img src="./images/portrait.jpg" alt="Profile" class="profile-image">
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="index.html#current" class="nav-link">What I Do</a></li>
+                    <li class="nav-item"><a href="index.html#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="index.html#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="index.html#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="index.html#interests" class="nav-link">Interests</a></li>
+                    <li class="nav-item"><a href="art.html" class="nav-link">Art Gallery</a></li>
+                    <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Art Gallery Section -->
+    <section id="art-gallery">
+        <div class="container">
+            <h2 class="section-title">Art Gallery</h2>
+
+            <div class="art-intro">
+                <p>Portraits and still life.</p>
+            </div>
+
+            <div class="art-categories">
+                <button class="category-btn active" data-category="all">All Works</button>
+                <button class="category-btn" data-category="acrylic">Acrylic</button>
+                <button class="category-btn" data-category="oil-pastel">Oil Pastel</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="acrylic">
+                    <img src="./images/red-onion.jpg" alt="Acrylic Gouache Still Life" class="artwork-image">
+                    <h3 class="artwork-title">Red Onion</h3>
+                    <p class="artwork-medium">Acrylic Gouache on Mixed Media Paper, 2024</p>
+                    <p class="artwork-description">"Red" foods.</p>
+                </div>
+                <div class="gallery-item" data-category="acrylic">
+                    <img src="./images/red-lentils.jpg" alt="Acrylic Gouache Still Life" class="artwork-image">
+                    <h3 class="artwork-title">Red Lentils</h3>
+                    <p class="artwork-medium">Acrylic Gouache on Mixed Media Paper, 2024</p>
+                    <p class="artwork-description">"Red" foods.</p>
+                </div>
+                <div class="gallery-item" data-category="acrylic">
+                    <img src="./images/red-grapefruit.jpg" alt="Acrylic Gouache Still Life" class="artwork-image">
+                    <h3 class="artwork-title">Red Grapefruit</h3>
+                    <p class="artwork-medium">Acrylic Gouache on Mixed Media Paper, 2024</p>
+                    <p class="artwork-description">"Red" foods.</p>
+                </div>
+                <div class="gallery-item" data-category="oil-pastel">
+                    <img src="./images/arthur.jpg" alt="Oil Pastel Portrait" class="artwork-image">
+                    <h3 class="artwork-title">Portrait of Arthur Dorsainville</h3>
+                    <p class="artwork-medium">Oil Pastel on Mixed Media Paper, 2025</p>
+                    <p class="artwork-description">Portrait inspired by Van Gogh's Roulin family portraits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for displaying full-size artwork -->
+    <div id="artwork-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-image-container">
+                <img src="" alt="Artwork" class="modal-image" id="modal-image">
+            </div>
+            <div class="modal-info">
+                <h3 class="modal-title" id="modal-title"></h3>
+                <p class="modal-medium" id="modal-medium"></p>
+                <p class="modal-description" id="modal-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/manaal-syed" class="social-link">LinkedIn</a>
+                <a href="https://www.x.com/phenomanaal" class="social-link">Twitter</a>
+                <a href="https://www.github.com/phenomanaal" class="social-link">GitHub</a>
+            </div>
+            <p>&copy; 2025 Manaal Syed. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript file -->
+    <script src="art-gallery.js"></script>
+</body>
+
+</html>
